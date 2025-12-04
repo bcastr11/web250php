@@ -1,0 +1,14 @@
+<footer>
+    <nav class="navbar">
+        <ul>
+            <li><a href="https://github.com/bcastr11" target="_blank">GitHub</a></li>
+            <li><a href="https://bcastr11.github.io/" target="_blank">GitHub.io</a></li>
+            <li><a href="https://bcastr11.github.io/web250/" target="_blank">WEB250.io</a></li>
+            <li><a href=" https://www.freecodecamp.org/bcastr11" target="_blank">freeCodeCamp</a></li>
+            <li><a href="https://www.codecademy.com/profiles/bcastr11" target="_blank">Codecademy</a></li>
+            <li><a href="https://jsfiddle.net/u/bcastr11/fiddles/" target="_blank">JSFiddle</a></li>
+            <li><a href="https://www.linkedin.com/in/baltazar-castro-luz-317431325/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <p class="LINKS">Website designed by Castro Enterprises | Certified In <a href="https://www.freecodecamp.org/certification/bcastr11/responsive-web-design" target="_blank">RWD</a> & <a href="https://www.freecodecamp.org/certification/bcastr11/javascript-algorithms-and-data-structures-v8" target="_blank">JADS</a></p>
+</footer>

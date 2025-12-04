@@ -1,0 +1,153 @@
+body {
+    background: #0f0e17;
+    color: #fffffe;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 25px;
+    padding-bottom: 300px;
+    margin: 0 auto;
+}
+
+main {
+    margin: 20px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p, .FONTLIST, .ABC123 {
+    background: #24232c;
+    padding: 25px 75px;
+    margin: 20px auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #332e54;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar li a {
+    display: block;
+    color: #fffffe;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.navbar li a:hover {
+    background-color: #7f5af0;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #332e54;
+}
+
+nav a {
+    font-family: "Gill Sans", sans-serif;
+    margin: 0 20px;
+    color: #fffffe;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #7f5af0;
+    text-decoration: underline;
+}
+
+header {
+    background-color: #332e54;
+    text-align: center;
+    padding: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #332e54;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 180px;
+    box-sizing: border-box;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    color: #fffffe;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+footer nav ul li a {
+    color: #fffffe;
+    text-decoration: none;
+    font-family: "Gill Sans", sans-serif;
+    border: none;
+}
+
+footer nav ul li a:hover {
+    color: #7f5af0;
+    text-decoration: underline;
+}
+
+a {
+    color: #7f5af0;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #9370ff;
+    text-decoration: underline;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+blockquote {
+    text-align: center;
+}
