@@ -4,7 +4,7 @@ $page = $_GET['page'] ?? 'home';
 $page_titles = [
     'home' => 'Home',
     'contract' => 'Contract',
-    'intro' => 'Introduction',
+    'introduction' => 'Introduction',
     'multi' => 'MultiPage'
 ];
 
