@@ -151,3 +151,30 @@ figcaption {
 blockquote {
     text-align: center;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #24232c;
+    min-width: 180px;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: #fffffe;
+    border-bottom: 1px solid #332e54;
+}
+
+.dropdown-content a:hover {
+    background: #7f5af0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
