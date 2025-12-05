@@ -7,7 +7,7 @@
             <li><a href="introduction.php">Introduction</a></li>
             
             <li class="dropdown">
-            <a href="#" class="dropbtn">MultiPage</a>
+            <a href="#" class="dropbtn">MultiPage ↓</a>
             <div class="dropdown-content">
                 <a href="superduper_static/index.htm">MultiPage Static</a>
                 <a href="superduper_php/index.php">MultiPage PHP</a>
