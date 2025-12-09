@@ -4,6 +4,7 @@
  * Demonstrates how to create a database, create a table, and insert records.
  */
 require_once 'db-tidb.php';
+$mysqli = new mysqli('gateway01.us-west-2.prod.aws.tidbcloud.com', 'root', 'hLLlzOJ19LardaLu', 'test','4000');
 
 
    if (!$mysqli) { 
