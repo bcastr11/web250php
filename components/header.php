@@ -19,6 +19,13 @@
                 <a href="superduper_php/index.php">MultiPage PHP</a>
             </div>
 
+            <li class="dropdown">
+            <a href="#" class="dropbtn">Projects ↓</a>
+            <div class="dropdown-content">
+                <a href="joyofphp/joyphp/src/index.php">JoyofPHP</a>
+                <a href="joyofphp/joyphp/src/samsusedcars.html">Sam's Used Cars</a>
+            </div>
+
             </li>
 
         </ul>
