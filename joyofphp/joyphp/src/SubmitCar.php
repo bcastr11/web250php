@@ -26,7 +26,7 @@ $query = "INSERT INTO inventory
     )";
 
 // Print the query to the browser so you can see it
-echo ($query. "<br>");
+//echo ($query. "<br>");
 
 include 'db.php';
 
@@ -45,7 +45,7 @@ else
     echo "Error entering $VIN into database: " . $mysqli->error."<br>";
 }
 $mysqli->close();
-include 'footer.php'
+include 'footer.php';
 ?>
 </body>
 </html>
