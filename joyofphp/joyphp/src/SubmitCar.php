@@ -6,7 +6,8 @@
 <body bgcolor="#FFFFFF" text="#000000" >
 
 <?php 
-
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 // Capture the values posted to this php program from the text fields
 
 $VIN =  trim( $_REQUEST['VIN']) ;
