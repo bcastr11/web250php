@@ -3,7 +3,7 @@
  * Joy of PHP sample code
  * Demonstrates how to create a database, create a table, and insert records.
  */
-$mysqli = new mysqli('localhost', 'root', '');
+require_once 'db-tidb.php';
 
 
    if (!$mysqli) { 
