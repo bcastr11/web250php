@@ -1,0 +1,15 @@
+# wasmer.toml
+[package]
+name = "joyofphp"
+version = "1.0.0"
+
+[[module]]
+name = "app"
+source = "src/"
+interpreter = "php"
+
+# If MySQL service needed
+[[services]]
+name = "mysql"
+image = "mysql:8.0"
+env = { MYSQL_ROOT_PASSWORD = "root" }
