@@ -1,6 +1,6 @@
  <?php
 $host = 'gateway01.us-west-2.prod.aws.tidbcloud.com';
-$user = 'root';
+$user = '29XCQK7XySi18S8.root';
 $pass = 'hLLlzOJ19LardaLu';  // Your password
 $db = 'test';
 $port = 4000;
