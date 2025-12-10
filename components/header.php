@@ -24,6 +24,7 @@
             <div class="dropdown-content">
                 <a href="joyofphp/joyphp/src/index.php">JoyofPHP</a>
                 <a href="joyofphp/joyphp/src/samsusedcars.html">Sam's Used Cars</a>
+                <a href="index.php?page=fizzbuzz">Fizzbuzz</a>
             </div>
 
             </li>

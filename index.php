@@ -5,7 +5,8 @@ $page_titles = [
     'home' => 'Home',
     'contract' => 'Contract',
     'introduction' => 'Introduction',
-    'multi' => 'MultiPage'
+    'multi' => 'MultiPage',
+    'fizzbuzz' => 'Fizzbuzz'
 ];
 
 $current_title = $page_titles[$page] ?? 'Home';
@@ -38,6 +39,7 @@ if (!file_exists($content_file)) {
 
     <?php include("components/footer.php"); ?>
     <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/fizzbuzz.js"></script>
 </body>
 </html>
 
