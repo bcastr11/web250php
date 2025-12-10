@@ -9,9 +9,6 @@
 <h1>Sam's Used Cars</h1>
 <h3>Complete Inventory</h3>
  <?php
-
-$mysqli = new mysqli('localhost', 'root', '', 'Cars');
-
 include 'db.php';
 $query = "SELECT * FROM inventory ORDER BY Make";
 /* Try to insert the new car into the database */
