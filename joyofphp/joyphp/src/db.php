@@ -5,16 +5,24 @@ $pass = 'HJmLyp8ClNoIuNIC';
 $db = 'test';
 $port = 4000;
 
-// MUST USE SSL FOR TiDB
 $mysqli = mysqli_init();
-$mysqli->ssl_set(NULL, NULL, NULL, NULL, NULL); // Enable SSL
+$mysqli->ssl_set(NULL, NULL, NULL, NULL, NULL);
 if (!$mysqli->real_connect($host, $user, $pass, $db, $port, NULL, MYSQLI_CLIENT_SSL)) {
-    die("TiDB SSL Connection failed: " . $mysqli->connect_error);
+    die("TiDB Connection failed: " . $mysqli->connect_error);
 }
 
-// Now select database
+// Create database and table if they don't exist
 $mysqli->query("CREATE DATABASE IF NOT EXISTS Cars");
 $mysqli->select_db("Cars");
 
-echo "<!-- Connected to TiDB and using Cars database -->";
+$table_sql = "CREATE TABLE IF NOT EXISTS inventory (
+    VIN varchar(17) PRIMARY KEY, 
+    YEAR INT, 
+    Make varchar(50), 
+    Model varchar(100),
+    ASKING_PRICE DECIMAL(10,2)
+)";
+$mysqli->query($table_sql);
+
+echo "<!-- Database and table ready -->";
 ?>
