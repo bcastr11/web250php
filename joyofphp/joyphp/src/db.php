@@ -13,5 +13,8 @@ if (!$mysqli->real_connect($host, $user, $pass, $db, $port, NULL, MYSQLI_CLIENT_
 }
 
 // Now select database
+$mysqli->query("CREATE DATABASE IF NOT EXISTS Cars");
 $mysqli->select_db("Cars");
+
+echo "<!-- Connected to TiDB and using Cars database -->";
 ?>
