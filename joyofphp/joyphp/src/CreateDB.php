@@ -6,7 +6,7 @@
 require_once 'db-tidb.php';
 $host = 'gateway01.us-east-1.prod.aws.tidbcloud.com';
 $user = '29XCQK7XySi18S8.root';
-$pass = 'hLLlzOJ19LardaLu'; 
+$pass = 'HJmLyp8ClNoIuNIC'; 
 $db = 'test';
 $port = 4000;
 
