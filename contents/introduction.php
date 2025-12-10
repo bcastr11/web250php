@@ -1,4 +1,3 @@
-
         <h2>Introduction</h2>
         <h3>Baltazar Castro Luz | Bold Cardinal</h3>
         <figure>
