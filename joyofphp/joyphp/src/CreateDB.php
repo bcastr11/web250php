@@ -4,7 +4,20 @@
  * Demonstrates how to create a database, create a table, and insert records.
  */
 require_once 'db-tidb.php';
-$mysqli = new mysqli('gateway01.us-west-2.prod.aws.tidbcloud.com', 'root', 'hLLlzOJ19LardaLu', 'test','4000');
+$host = 'gateway01.us-west-2.prod.aws.tidbcloud.com';
+$user = 'root';
+$pass = 'hLLlzOJ19LardaLu';
+$db = 'test';
+$port = 4000;
+
+// Enable SSL for TiDB
+$mysqli = mysqli_init();
+$mysqli->ssl_set(NULL, NULL, NULL, NULL, NULL);
+$mysqli->real_connect($host, $user, $pass, $db, $port, NULL, MYSQLI_CLIENT_SSL);
+
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
 
 
    if (!$mysqli) { 
