@@ -10,10 +10,12 @@ $mysqli = mysqli_init();
 $mysqli->ssl_set(NULL, NULL, NULL, NULL, NULL);
 $mysqli->real_connect($host, $user, $pass, $db, $port, NULL, MYSQLI_CLIENT_SSL);
 /* check connection */
-if (mysqli_connect_errno()) {
-    printf("Connect failed: %s\n", mysqli_connect_error());
-    exit();
+if ($mysqli->connect_error) {
+    die("TiDB SSL Connection failed: " . $mysqli->connect_error);
 }
+
+$mysqli->query("SELECT 1");
+
 //select a database to work with
 $mysqli->select_db("Cars");
  
