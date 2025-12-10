@@ -1,11 +1,17 @@
  <?php
-$mysqli = new mysqli('gateway01.us-west-2.prod.aws.tidbcloud.com', 'root', 'hLLlzOJ19LardaLu', 'test','4000');
-/* check connection */
-if (mysqli_connect_errno()) {
-    printf("Connect failed: %s\n", mysqli_connect_error());
-    exit();
+$host = 'gateway01.us-west-2.prod.aws.tidbcloud.com';
+$user = 'root';
+$pass = 'hLLlzOJ19LardaLu';  // Your password
+$db = 'test';
+$port = 4000;
+
+// MUST USE SSL FOR TiDB
+$mysqli = mysqli_init();
+$mysqli->ssl_set(NULL, NULL, NULL, NULL, NULL); // Enable SSL
+if (!$mysqli->real_connect($host, $user, $pass, $db, $port, NULL, MYSQLI_CLIENT_SSL)) {
+    die("TiDB SSL Connection failed: " . $mysqli->connect_error);
 }
-//select a database to work with
+
+// Now select database
 $mysqli->select_db("Cars");
- 
 ?>
